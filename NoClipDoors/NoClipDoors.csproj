@@ -2,8 +2,5 @@
     <PropertyGroup>
         <ProjectName>NoClipDoors</ProjectName>
     </PropertyGroup>
-    <ItemGroup>
-      <Folder Include="obj\Release\netstandard2.0" />
-    </ItemGroup>
     <Import Project="$(SolutionDir)\plateup.targets" />
 </Project>
