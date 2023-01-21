@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoClipDoors", "NoClipDoors\NoClipDoors.csproj", "{0A5AD9D3-206A-4A87-96A9-4D094BDF969C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHateCollisions", "IHateCollisions\IHateCollisions.csproj", "{0A5AD9D3-206A-4A87-96A9-4D094BDF969C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

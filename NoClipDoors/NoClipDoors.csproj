@@ -1,6 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <ProjectName>NoClipDoors</ProjectName>
-    </PropertyGroup>
-    <Import Project="$(SolutionDir)\plateup.targets" />
-</Project>
