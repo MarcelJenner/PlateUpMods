@@ -1,15 +1,14 @@
-global using static DoorsAreAnnoying.Helper;
+global using static IHateCollisions.Helper;
 global using UnityEngine;
 global using Kitchen;
 global using KitchenMods;
 
-namespace DoorsAreAnnoying
+namespace IHateCollisions;
+
+public static class Helper
 {
-    public static class Helper
+    public static void Log(string message)
     {
-        public static void Log(string message)
-        {
-            Debug.Log($"[{nameof(IHateCollisions)}]: {message}");
-        }
+        Debug.Log($"[{nameof(IHateCollisions)}]: {message}");
     }
 }

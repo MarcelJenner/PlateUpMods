@@ -1,31 +1,28 @@
-﻿using System.Linq;
+﻿namespace IHateCollisions.Systems;
 
-namespace DoorsAreAnnoying.Systems
+public class DisablePlayerCollisionSystem : GenericSystemBase, IModSystem
 {
-    public class DisablePlayerCollisionSystem : GenericSystemBase, IModSystem
+    private static bool _disablePlayerCollisionOption = true;
+    public static bool DisablePlayerCollisionOption
     {
-        private static bool _disablePlayerCollisionOption = true;
-        public static bool DisablePlayerCollisionOption
+        get => _disablePlayerCollisionOption;
+        set
         {
-            get => _disablePlayerCollisionOption;
-            set
-            {
-                SettingsChanged = true;
-                _disablePlayerCollisionOption = value;
-            }
+            _settingsChanged = true;
+            _disablePlayerCollisionOption = value;
         }
-        private static bool SettingsChanged = true;
+    }
+    private static bool _settingsChanged = true;
         
-        private const int LayerPlayers = 12;
+    private const int LayerPlayers = 12;
         
-        protected override void OnUpdate() {
+    protected override void OnUpdate() {
 
-            if (SettingsChanged)
-            {
-                Log($"Removing player collisions");
-                Physics.IgnoreLayerCollision(LayerPlayers, LayerPlayers, DisablePlayerCollisionOption);
-                SettingsChanged = false;
-            }
+        if (_settingsChanged)
+        {
+            Log($"{(DisablePlayerCollisionOption ? "disabling": "enabling")} player collisions");
+            Physics.IgnoreLayerCollision(LayerPlayers, LayerPlayers, DisablePlayerCollisionOption);
+            _settingsChanged = false;
         }
     }
 }

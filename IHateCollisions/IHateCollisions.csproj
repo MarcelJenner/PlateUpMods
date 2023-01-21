@@ -2,6 +2,7 @@
     <PropertyGroup>
         <ProjectName>IHateCollisions</ProjectName>
         <AssemblyName>IHateCollisions</AssemblyName>
+        <RootNamespace>IHateCollisions</RootNamespace>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <ItemGroup>
