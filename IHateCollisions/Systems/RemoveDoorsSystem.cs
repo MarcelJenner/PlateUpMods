@@ -33,6 +33,7 @@ public class RemoveDoorsSystem : GenericSystemBase, IModSystem
         
     protected override void OnUpdate()
     {
+        // TODO: i dont like this
         if (_frameCount < 500)
         {
             _frameCount++;

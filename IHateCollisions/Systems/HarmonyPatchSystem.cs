@@ -19,7 +19,7 @@ public class HarmonyPatchSystem : GenericSystemBase, IModSystem
 
 public class IHateCollisionsPatcher : MonoBehaviour
 {
-    private readonly HarmonyLib.Harmony harmony = new HarmonyLib.Harmony("happening.plateup.plateupprepghost");
+    private readonly HarmonyLib.Harmony harmony = new HarmonyLib.Harmony("happening.plateup.ihatecollisions");
 
     private void Awake()
     {

@@ -8,9 +8,9 @@ using Kitchen.Modules;
 namespace IHateCollisions;
 
 [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.Setup))]
-class MenuPatch
+public class MenuPatch
 {
-    // INFO: parametername has to be "__instance" because thats the name of the internal plateUp variable thats used as the parameter after the harmony patch
+    // INFO: "__instance" is a reference to the object where harmony injects this method - https://harmony.pardeike.net/articles/patching-injections.html
     [HarmonyPrefix]
     public static void Setup_AddPrepGhostMenu(MainMenu __instance) 
     {
@@ -30,7 +30,7 @@ class MenuPatch
 }
 
 [HarmonyPatch(typeof(PlayerPauseView), "SetupMenus")]
-class PausePatch
+public class PausePatch
 {
     [HarmonyPrefix]
     public static void SetupMenus_AddPrepGhostMenu(PlayerPauseView __instance)
@@ -42,7 +42,7 @@ class PausePatch
     }
 }
 
-class IHateCollisionsOptionsMenu : Menu<PauseMenuAction>
+public class IHateCollisionsOptionsMenu : Menu<PauseMenuAction>
 {
     public Option<bool> RemoveDoorsOption;
 
