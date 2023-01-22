@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHateCollisions", "IHateCollisions\IHateCollisions.csproj", "{0A5AD9D3-206A-4A87-96A9-4D094BDF969C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasterConveyors", "FasterConveyors\FasterConveyors.csproj", "{B3770FA5-3002-4776-8346-022B13A976AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{0A5AD9D3-206A-4A87-96A9-4D094BDF969C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A5AD9D3-206A-4A87-96A9-4D094BDF969C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A5AD9D3-206A-4A87-96A9-4D094BDF969C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3770FA5-3002-4776-8346-022B13A976AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3770FA5-3002-4776-8346-022B13A976AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3770FA5-3002-4776-8346-022B13A976AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3770FA5-3002-4776-8346-022B13A976AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

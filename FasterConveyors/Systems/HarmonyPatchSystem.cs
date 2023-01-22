@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace IHateCollisions.Systems;
+namespace FasterConveyors.Systems;
 
 public class HarmonyPatchSystem : GenericSystemBase, IModSystem
 {
@@ -8,7 +8,7 @@ public class HarmonyPatchSystem : GenericSystemBase, IModSystem
     {
         if (Object.FindObjectOfType<IHateCollisionsPatcher>() != null)
             return;
-        var prepGhostMod = new GameObject("IHateCollisions");
+        var prepGhostMod = new GameObject("FasterConveyors");
         prepGhostMod.AddComponent<IHateCollisionsPatcher>();
         Object.DontDestroyOnLoad(prepGhostMod);
     }
@@ -18,7 +18,7 @@ public class HarmonyPatchSystem : GenericSystemBase, IModSystem
 
 public class IHateCollisionsPatcher : MonoBehaviour
 {
-    private readonly HarmonyLib.Harmony harmony = new HarmonyLib.Harmony("happening.plateup.ihatecollisions");
+    private readonly HarmonyLib.Harmony harmony = new HarmonyLib.Harmony("happening.plateup.fasterconveyors");
 
     private void Awake()
     {
